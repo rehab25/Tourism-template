@@ -1,0 +1,310 @@
+ /* ==================== start general styles ==================== */
+a{
+	transition: color .5s ease-in-out;
+}
+h1,h2{
+	font-family: 'Footlight MT Light';
+}
+.text-secondColor{
+	color: #d77b5d !important;
+}
+.z-index{z-index: 999;}
+.text-gray{
+	color: #888;
+}
+.min-h{
+	min-height: 300px;
+}
+.line-height{
+ line-height: 1.8;
+}
+.txt-fs{
+	font-size: 2.9rem;
+}
+.beforAndAfter::before{
+    position: absolute;
+    top: 1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 85px;
+    color: rgba(0,0,0,.1)
+}
+.beforAndAfter::after{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-size: 41px;
+}
+ /* ==================== end general styles ==================== */
+
+/* ==================== start pageCover & navbar ==================== */
+.pageCover{
+	height: 90%;
+	background: url(../img/photo-slide.jpg);
+	background-size: 100% 100%;
+}
+.pageCover .overlay{
+	background-color: #24324a8c;
+	height: 100%;
+}
+.pageCover .welcome-text{
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-family: lato,sans-serif;
+	font-weight:900;
+}
+.pageCover .overlay .words h1{
+	font-family: 'Footlight MT Light';
+	font-size: 7rem;
+}
+.pageCover .overlay .words p{
+	color: #a0a6b1;
+}
+/* ============== start navbar =============== */
+.Navbar .navbar-brand{
+	margin-left: 20px;
+	font-size: 3.5rem;
+	font-family: fantasy;
+	color: #fff;
+	font-style: italic;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #d77b5d;
+}
+@media (max-width:485px){ 
+	.pageCover .overlay .words h1{font-size: 85px;}
+}
+@media (max-width: 991.98px) {  
+	.Navbar{margin-left:initial;}
+	.navbar{display: block;}
+ }
+/* ==================== end pageCover & navbar ==================== */
+
+/* ================= start section Tours ===================== */
+.Tours{
+	background-color: #f6f6f6;
+	padding-bottom: 100px;
+}
+.Tours .card-block{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	cursor: pointer
+}
+.Tours .card-block:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.Tours .form-img{
+	margin-top: -100px;
+}
+.Tours .form-img img{
+    transition: all .5s ease-in-out;
+}
+.Tours .form-img:hover img{
+    transform: scale(1.1);
+}
+.Tours .form-img .form-img-child{
+    transition: all .5s ease-in-out;
+}
+.Tours .form-img .form-img-child:hover {
+	background-color: #24324a9e;
+}
+
+.Tours .form-img:hover .form-img-child{
+    transform: scale(1.1);
+    color: #f25454;
+}
+.Tours .form-img:hover{
+    cursor: pointer;
+}
+@media (max-width: 991.98px) { 
+	.Tours{	padding-bottom: 0px; margin-top: 50px;}
+	.mb-5{margin-bottom: 10rem !important;}
+ }
+ @media (max-width: 767.98px) { 
+	.mb-5{margin-bottom: 9rem !important; }	
+ }
+ @media (max-width: 575.98px) {  	
+	 .mb-5{margin-bottom: 13rem !important; }	
+}
+/* ==================== end section Tours ==================== */
+
+/* ==================== start section about-grandium ==================== */
+.about-grandium .beforAndAfter::before{ content: "A";  }
+.about-grandium .beforAndAfter::after{ content: "____"; }
+.about-grandium p:first-child{
+	font-family: Lato,sans-serif;
+	font-size: 14px;
+}
+.about-grandium{
+	font-family: 'FontAwesome';
+}
+.about-grandium p:last-child{
+	font-size: 1.2rem;
+}
+/* ==================== end section about-grandium ==================== */
+
+/* ================= start section about ===================== */
+.about .beforAndAfter::before{
+	top: 1.7rem;
+    content: "T";
+}
+.about .beforAndAfter::after{
+    content: "____";
+}
+.about{
+	background-color: #f6f6f6;
+}
+.slider {
+	margin: auto;
+	width: 90%;
+	cursor: pointer;
+}
+.slick-slide {
+  margin: 0px 20px;
+  height: auto;
+}
+.slick-slide img {
+  width: 100%;height: 40%;
+}
+.slick-prev:before,
+.slick-next:before {
+	font-size:30px;
+  	color: #1e293c;
+}
+.slick-prev {
+	left: -50px;
+}
+.slick-next {
+	right: -40px;
+}
+.slick-slide {
+  opacity: .2;
+}
+.slick-active {
+  opacity: .5;
+  background-color: #fff;
+}
+.slick-current {
+  opacity: 1;
+}
+.slick-dots{
+	bottom: -70px;
+}
+@media (max-width: 767.98px) {
+	.slick-prev:before,
+	.slick-next:before {
+		display: none;
+	}
+	.slider {width: 80%;}
+}
+  /* ==================== end section about ==================== */
+
+/* ==================== start section facilites ==================== */
+.facilites{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.box-shadow{
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+  .single-facility{
+	  min-height: 350px;
+	  background-position: center;
+	  background-size:100% 100%;
+	  position: relative;
+	  cursor: pointer;
+}
+.single-facility-child{
+	background-color: #24324a6b;
+	height: 100%;
+}
+.bottom{
+	bottom: 0;
+	transition: all .5s ease-in-out;
+}
+.bottom:hover {
+	bottom: 50;
+}
+@media (max-width: 991.98px) {
+	.facilites .w-75{ width: 100% !important; }
+ }
+/* ==================== end section facilites ==================== */
+/* ==================== start videoSec ==================== */
+.videoSec{ max-height:400px }
+.overflow{
+	background-color: #24324ab3;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.overflow button{
+	background-color: #fff;
+	border-color: #fff;
+	color: #1e293c;
+	transition: all .5s ease-in-out;
+}
+.overflow button:hover{
+	background-color: #24324a;
+	border-color: #24324a;
+}
+@media (max-width: 1199.98px) {  .overflow .w-50{  width: 70% !important; }  }
+@media (max-width: 991.98px) { 	.overflow .w-50{ width: 80% !important;  }  }
+@media (max-width: 767.98px) {  .overflow p:first-child{ display: none;  }  }
+ @media (max-width: 575.98px) {  
+	 .overflow .w-50{ width: 90% !important;  } 
+	 .pt-5{ padding-top: 1.5rem !important } 
+}
+/* ==================== end section videoSec ==================== */
+
+/* ==================== start ContactUs ==================== */
+.ContactUs .beforAndAfter::before{  content: "U";  }
+.ContactUs .beforAndAfter::after{  content: "____";  }
+.ContactUs{
+	padding: 60px 0;
+	background-color: #f6f6f6;
+}
+.ContactUs .h1{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.ContactUs form{
+	margin-top: 60px;
+}
+.ContactUs form label{
+	margin-top: 10px;
+	margin-left: 15px;
+	color: #333333
+}
+.ContactUs form input{
+	margin: 10px 0;
+}
+.ContactUs form button{
+	padding: 10px 20px;
+	background-color: #24324ad6;
+	border-color: #24324ad6;
+	transition: all .5s ease-in-out;
+}
+.ContactUs form button:hover{
+	background-color: #24324a;
+	border-color: #24324a;
+}
+/* ==================== end ContactUs ==================== */
+
+/* ==================== start footer ==================== */
+.footer{
+	background-color: #24324a;
+}
+.footer p a{
+	color: #f25454;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+.footer p a:hover{
+	font-weight: bold;
+}
+/* ==================== end footer ==================== */
